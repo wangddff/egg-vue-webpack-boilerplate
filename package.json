@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "axios": "^0.16.2",
+    "better-scroll": "^1.4.2",
     "egg": "^1.4.0",
     "egg-logger": "^1.5.0",
     "egg-validate": "^1.0.0",

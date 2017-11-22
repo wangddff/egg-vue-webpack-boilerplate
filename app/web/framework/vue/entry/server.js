@@ -3,7 +3,7 @@ import '../filter';
 import '../directive';
 import '../component';
 
-export default function render(options) {
+exports.render = options => {
   if (options.store && options.router) {
     return context => {
       options.router.push(context.state.url);

@@ -82,7 +82,9 @@
       }
     },
     mounted() {
-      formatDate(new Date());
+      const Scroll = require('better-scroll');
+      const Vconsole = require('vconsole');
+      console.log(Scroll,Vconsole);
       window.addEventListener('scroll', ()=>{
         this.loadPage();
       }, false);
