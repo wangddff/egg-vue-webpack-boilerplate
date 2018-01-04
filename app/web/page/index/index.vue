@@ -39,7 +39,7 @@
 <style>
   @import "index.css";
 </style>
-<script type="text/babel">
+<script type="ts">
   import { formatDate } from 'framework/utils/utils.js';
   export default {
     components: {

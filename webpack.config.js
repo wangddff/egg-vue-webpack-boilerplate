@@ -23,8 +23,21 @@ module.exports = {
     framework: 'app/web/framework',
     store: 'app/web/store'
   },
+  resolve: {
+    extensions: ['.ts', '.tsx']
+  },
   dll: ['vue/dist/vue.common.js', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
-  loaders: {},
+  loaders: {
+    typescript: { 
+      test: /\.ts$/,
+      exclude: [/node_modules/],
+      loader: 'ts-loader',
+      options: {
+        appendTsSuffixTo: [/\.vue$/],
+        configFile: path.resolve(__dirname, './app/web/tsconfig.json'),
+      }
+    }
+  },
   plugins: {},
   done() {
 

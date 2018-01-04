@@ -5,7 +5,7 @@
     </transition>
   </app-layout>
 </template>
-<script type="text/babel">
+<script type="ts">
   export default {
     computed: {
 

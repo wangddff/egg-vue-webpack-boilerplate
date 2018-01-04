@@ -18,7 +18,7 @@
 @import "about.css";
 
 </style>
-<script type="text/babel">
+<script type="ts">
 
   import { Toast } from 'mint-ui';
   //import 'mint-ui/lib/style.css';
