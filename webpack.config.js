@@ -5,19 +5,17 @@ module.exports = {
   framework: 'vue',
   entry: {
     include: ['app/web/page',
-      { 'app/app': 'app/web/page/app/app.js?loader=false' },
-      { 'elementjs/elementjs': 'app/web/page/elementjs/elementjs.js?loader=false' }
+      { 'app/app': 'app/web/page/app/app.ts?loader=false' }
     ],
     exclude: ['app/web/page/[a-z]+/component', 'app/web/page/html', 'app/web/page/elementjs'],
     loader: {
-      client: 'app/web/framework/vue/entry/client-loader.js',
-      server: 'app/web/framework/vue/entry/server-loader.js',
+      client: 'app/web/framework/vue/entry/client-loader.ts',
+      server: 'app/web/framework/vue/entry/server-loader.ts',
     }
   },
   alias: {
-    server: 'app/web/framework/vue/entry/server.js',
-    client: 'app/web/framework/vue/entry/client.js',
-    app: 'app/web/framework/vue/app.js',
+    server: 'app/web/framework/vue/entry/server.ts',
+    client: 'app/web/framework/vue/entry/client.ts',
     asset: 'app/web/asset',
     component: 'app/web/component',
     framework: 'app/web/framework',
