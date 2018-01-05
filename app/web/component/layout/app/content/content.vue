@@ -8,8 +8,9 @@
 <style>
   @import "content.css";
 </style>
-<script type="text/babel">
-  export default{
+<script type="ts">
+  import Vue from 'vue';
+  export default Vue.extend({
     name:'v-content',
     data(){
       return {
@@ -20,5 +21,5 @@
     mounted() {
 
     }
-  }
+  });
 </script>

@@ -1,8 +1,9 @@
-import MainLayout from './main';
+import Vue from 'vue';
+import MainLayout from './main.vue';
 
 const tpl = '<div id="app"><MainLayout><div slot="main"><slot></slot></div></MainLayout></div>';
 
-export default {
+export default Vue.extend({
   name: 'AppLayout',
   props: [ 'title', 'description', 'keywords' ],
   components: {
@@ -38,4 +39,4 @@ export default {
                   </body>
                 </html>`
 
-};
+});

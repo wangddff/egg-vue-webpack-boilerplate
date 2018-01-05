@@ -1,5 +1,6 @@
 
-import MainLayout from './main';
+import Vue from 'vue';
+import MainLayout from './main.vue';
 
 const content = '<div id="app"><MainLayout><div slot="main"><slot></slot></div></MainLayout></div>';
 
@@ -18,7 +19,7 @@ const template = `<!DOCTYPE html>
 </body>
 </html>`;
 
-export default {
+export default Vue.extend({
   name: 'Layout',
   props: [ 'title', 'description', 'keywords' ],
   components: {
@@ -39,4 +40,4 @@ export default {
     }
   },
   template: EASY_ENV_IS_NODE ? template : content
-};
+});

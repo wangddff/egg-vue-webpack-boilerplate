@@ -8,21 +8,19 @@
 </template>
 <style>
 @font-face {
- font-family: "fontawesome";
- src: url("./font/fontawesome-webfont.ttf");
+  font-family: "fontawesome";
+  src: url("./font/fontawesome-webfont.ttf");
 }
-.fontawesome
-{
-  font-family:fontawesome;
+.fontawesome {
+  font-family: fontawesome;
 }
 @import "about.css";
-
 </style>
 <script type="ts">
 
   import { Toast } from 'mint-ui';
   //import 'mint-ui/lib/style.css';
-  export default {
+  export default Vue.extend({
     components: {},
     computed: {},
     methods: {},
@@ -33,6 +31,6 @@
         duration: 5000
       });
     }
-  }
+  })
 </script>
 

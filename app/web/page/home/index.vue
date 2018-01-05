@@ -40,8 +40,9 @@
   @import "index.css";
 </style>
 <script type="ts">
+  import Vue from 'vue';
   import { formatDate } from 'framework/utils/utils.js';
-  export default {
+  export default Vue.extend({
     components: {
 
     },
@@ -87,6 +88,6 @@
         this.loadPage();
       }, false);
     }
-  }
+  });
 </script>
 

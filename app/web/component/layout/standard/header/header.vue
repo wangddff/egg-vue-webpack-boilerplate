@@ -15,8 +15,9 @@
 <style>
   @import "./header.css";
 </style>
-<script type="text/babel">
-  export default{
+<script type="ts">
+  import Vue from 'vue';
+  export default Vue.extend({
     data(){
       return {
         selectedMenu : '/'
@@ -27,5 +28,5 @@
     mounted(){
       this.selectedMenu = window.location.pathname.toLowerCase();
     }
-  }
+  });
 </script>

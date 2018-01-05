@@ -15,13 +15,14 @@
   }
   @import "../../../asset/css/global.css";
 </style>
-<script type="text/babel">
+<script type="ts">
+  import Vue from 'vue';
   import LayoutHeader from './header/header';
   import LayoutContent from './content/content';
-  export default{
+  export default Vue.extend({
     components: {
       LayoutHeader,
       LayoutContent
     }
-  }
+  });
 </script>
