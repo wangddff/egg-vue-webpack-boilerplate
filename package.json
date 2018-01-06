@@ -50,7 +50,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-preset-env": "^1.6.0",
+    "commitizen": "^2.9.6",
     "cross-env": "^5.0.0",
+    "cz-conventional-changelog": "^2.1.0",
     "directory-named-webpack-plugin": "^2.2.3",
     "easywebpack-cli": "^3.5.2",
     "easywebpack-vue": "^3.5.0",
@@ -88,5 +90,10 @@
   },
   "author": "hubcarl@126.com",
   "license": "MIT",
-  "homepage": "https://github.com/hubcarl/egg-vue-webpack-boilerplate"
+  "homepage": "https://github.com/hubcarl/egg-vue-webpack-boilerplate",
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
 }
