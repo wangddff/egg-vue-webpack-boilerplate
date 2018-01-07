@@ -20,7 +20,7 @@
 
   import { Toast } from 'mint-ui';
   //import 'mint-ui/lib/style.css';
-  export default Vue.extend({
+  export default {
     components: {},
     computed: {},
     methods: {},
@@ -31,6 +31,6 @@
         duration: 5000
       });
     }
-  })
+  }
 </script>
 

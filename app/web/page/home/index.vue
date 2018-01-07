@@ -4,7 +4,7 @@
       <div class="row row-offcanvas row-offcanvas-right">
         <div class="col-xs-12 col-sm-9">
           <ul class="smart-artiles" id="articleList">
-            <li v-for="item in lists">
+            <li v-for="item in lists" :key="item.id">
               <div class="point">+{{item.hits}}</div>
               <div class="card">
                 <h2><a :href="item.url" target="_blank">{{item.title}}</a></h2>
@@ -40,9 +40,9 @@
   @import "index.css";
 </style>
 <script type="ts">
-  import Vue from 'vue';
   import { formatDate } from 'framework/utils/utils.js';
-  export default Vue.extend({
+
+  export default {
     components: {
 
     },
@@ -83,11 +83,10 @@
       }
     },
     mounted() {
-      formatDate(new Date());
       window.addEventListener('scroll', ()=>{
         this.loadPage();
       }, false);
     }
-  });
+  };
 </script>
 

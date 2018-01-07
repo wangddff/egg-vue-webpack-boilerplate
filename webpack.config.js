@@ -7,7 +7,7 @@ module.exports = {
     include: ['app/web/page',
       { 'app/app': 'app/web/page/app/app.ts?loader=false' }
     ],
-    exclude: ['app/web/page/[a-z]+/component', 'app/web/page/html', 'app/web/page/elementjs'],
+    exclude: ['app/web/page/[a-z]+/component'],
     loader: {
       client: 'app/web/framework/vue/entry/client-loader.ts',
       server: 'app/web/framework/vue/entry/server-loader.ts',
@@ -23,14 +23,14 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx'],
-    alias:{
+    alias: {
       vue: 'vue/dist/vue.esm.js'
     }
   },
-  dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
+  dll: [path.join(__dirname, 'node_modules/vue/dist/vue.esm.js'), 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
   loaders: {
-    babel: false,
-    typescript: { 
+    // babel: false,
+    typescript: {
       test: /\.ts$/,
       exclude: [/node_modules/],
       loader: 'ts-loader',

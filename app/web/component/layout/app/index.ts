@@ -3,7 +3,7 @@ import MainLayout from './main.vue';
 
 const tpl = '<div id="app"><MainLayout><div slot="main"><slot></slot></div></MainLayout></div>';
 
-export default Vue.extend({
+export default {
   name: 'AppLayout',
   props: [ 'title', 'description', 'keywords' ],
   components: {
@@ -39,4 +39,4 @@ export default Vue.extend({
                   </body>
                 </html>`
 
-});
+};

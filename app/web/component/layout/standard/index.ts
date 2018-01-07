@@ -19,7 +19,7 @@ const template = `<!DOCTYPE html>
 </body>
 </html>`;
 
-export default Vue.extend({
+export default {
   name: 'Layout',
   props: [ 'title', 'description', 'keywords' ],
   components: {
@@ -40,4 +40,4 @@ export default Vue.extend({
     }
   },
   template: EASY_ENV_IS_NODE ? template : content
-});
+};

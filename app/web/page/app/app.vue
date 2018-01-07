@@ -6,12 +6,12 @@
   </app-layout>
 </template>
 <script type="ts">
-  export default Vue.extend({
+  export default {
     computed: {
 
     },
     mounted(){
 
     }
-  });
+  };
 </script>

@@ -9,8 +9,7 @@
   @import "content.css";
 </style>
 <script type="ts">
-  import Vue from 'vue';
-  export default Vue.extend({
+  export default {
     name:'v-content',
     data(){
       return {
@@ -21,5 +20,5 @@
     mounted() {
 
     }
-  });
+  };
 </script>
