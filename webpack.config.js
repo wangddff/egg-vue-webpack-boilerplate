@@ -20,14 +20,12 @@ module.exports = {
     component: 'app/web/component',
     framework: 'app/web/framework',
     store: 'app/web/store',
+    vue: 'vue/dist/vue.esm.js'
   },
   resolve: {
-    extensions: ['.ts', '.tsx'],
-    alias: {
-      vue: 'vue/dist/vue.esm.js'
-    }
+    extensions: ['.ts', '.tsx']
   },
-  dll: [path.join(__dirname, 'node_modules/vue/dist/vue.esm.js'), 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
+  dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
   loaders: {
     // babel: false,
     typescript: {
