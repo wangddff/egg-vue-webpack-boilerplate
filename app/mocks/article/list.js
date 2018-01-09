@@ -1,4 +1,5 @@
 'use strict';
+Object.defineProperty(exports, "__esModule", { value: true });
 const data = {
     list: [{
             title: 'vue-渐进式JavaScript 框架',
@@ -84,13 +85,17 @@ data.list.forEach(item => {
     item.id = id++;
 });
 const total = data.list.length;
-exports.getPage = (pageIndex = 1, pageSize = 10) => {
+function getPage(pageIndex = 1, pageSize = 10) {
     const start = (pageIndex - 1) * pageSize;
     const end = start + Number(pageSize);
     return { list: data.list.slice(start, end), total };
-};
-exports.getDetail = id => {
+}
+exports.getPage = getPage;
+;
+function getDetail(id) {
     return data.list.filter(item => {
         return item.id === id;
     }).slice(0, 1);
-};
+}
+exports.getDetail = getDetail;
+;
