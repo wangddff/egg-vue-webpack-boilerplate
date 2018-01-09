@@ -27,10 +27,10 @@ module.exports = {
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
   loaders: {
-    // babel: false,
+    babel: false,
     typescript: {
       test: /\.ts$/,
-      exclude: [/node_modules/],
+      exclude: [/node_modules/, /public/],
       loader: 'ts-loader',
       options: {
         appendTsSuffixTo: [/\.vue$/],
