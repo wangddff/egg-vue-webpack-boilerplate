@@ -1,7 +1,9 @@
-const path = require('path');
-const fs = require('fs');
-module.exports = app => {
-  const exports = {};
+import { Application, EggAppConfig } from 'egg';
+import * as path from 'path';
+import * as fs from 'fs';
+
+export default (app : EggAppConfig) => {
+  const exports : any = {};
 
   exports.siteFile = {
     '/favicon.ico': fs.readFileSync(path.join(app.baseDir, 'app/web/asset/images/favicon.ico'))

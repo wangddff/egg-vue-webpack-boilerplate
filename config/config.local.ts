@@ -1,7 +1,9 @@
-const path = require('path');
-const ip = require('ip');
-module.exports = app => {
-  const exports = {};
+import { Application, EggAppConfig } from 'egg';
+import * as path from 'path';
+import * as ip from 'ip';
+
+export default (app : EggAppConfig) => {
+  const exports : any = {};
 
   exports.static = {
     maxAge: 0 // maxAge 缓存，默认 1 年
