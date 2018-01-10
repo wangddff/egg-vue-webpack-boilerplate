@@ -1,7 +1,6 @@
-import Model from '../../mocks/article/list';
+import * as Model from '../../mocks/article/list';
 import { Controller } from 'egg';
 export default class HomeController extends Controller {
-
   async index() {
     const { ctx } = this;
     await ctx.render('home/index.js', Model.getPage(1, 10));
@@ -18,5 +17,4 @@ export default class HomeController extends Controller {
     const pageSize = ctx.query.pageSize;
     ctx.body = Model.getPage(pageIndex, pageSize);
   }
-  
-};
+}

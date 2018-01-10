@@ -1,4 +1,4 @@
-import Model from '../../mocks/article/list';
+import * as Model from '../../mocks/article/list';
 import { Controller } from 'egg';
 export default class AppController extends Controller {
   async index() {

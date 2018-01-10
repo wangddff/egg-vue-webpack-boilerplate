@@ -7,9 +7,15 @@ declare module 'egg' {
   }
 
   export interface IController {
-    home: HomeController,
-    app: AppController,
-    about: AboutController
+    home: {
+      home: HomeController
+    },
+    app: {
+      app:AppController,
+    },
+    about: {
+      about: AboutController
+    }
   }
 
   export interface IService {
