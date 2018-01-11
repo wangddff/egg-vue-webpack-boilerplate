@@ -89,6 +89,9 @@
     "type": "git",
     "url": "git+https://github.com/hubcarl/egg-vue-webpack-boilerplate.git"
   },
+  "tnpm": {
+    "mode": "npm"
+  },
   "author": "hubcarl@126.com",
   "license": "MIT",
   "homepage": "https://github.com/hubcarl/egg-vue-webpack-boilerplate",
